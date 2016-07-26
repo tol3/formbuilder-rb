@@ -36,7 +36,7 @@ module Formbuilder
 
     serialize :field_options, Hash
 
-    ALLOWED_PARAMS = [:key, :blind, :label, :field_options, :required, :admin_only]
+    ALLOWED_PARAMS = [:key, :blind, :label, :field_options, :required, :admin_only, :identifier]
 
     def length_validations(include_units = true)
       return_hash = {
