@@ -21,6 +21,7 @@ module Formbuilder
           type: response_field.type,
           field_options: response_field.field_options,
           sort_order: response_field.sort_order,
+          identifier: response_field.identifier,
           required: response_field.required,
           blind: response_field.blind,
           admin_only: response_field.admin_only
