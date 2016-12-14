@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'geocoder', '~> 1.1', '>= 1.1.9'
   s.add_dependency 'pg', '~> 0.17', '>= 0.17.1'
   s.add_dependency 'rinku', '~> 1.7', '>= 1.7.3'
-  s.add_dependency 'rmagick', '~> 2.13', '>= 2.13.2'
+  # s.add_dependency 'rmagick', '~> 2.13', '>= 2.13.2'
 
   s.add_development_dependency 'capybara', '~> 2.2', '>= 2.2.1'
   s.add_development_dependency 'database_cleaner', '~> 1.2', '>= 1.2.0'
