@@ -6,7 +6,7 @@ module Formbuilder
       extend ActiveSupport::Concern
 
       included do
-        before_filter :load_form
+        before_filter :load_form, only: [:update]
       end
 
       def update
@@ -48,8 +48,8 @@ module Formbuilder
         filtered_params = field_params.select { |k, _|
           k.to_sym.in?(Formbuilder::ResponseField::ALLOWED_PARAMS)
         }.merge(
-          sort_order: 0,
-          type: "Formbuilder::ResponseField#{field_params[:field_type]}"
+          sort_order: i,
+          type: "Formbuilder::ResponseField#{field_params[:field_type].camelize}"
         )
 
         filtered_params.permit!
